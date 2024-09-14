@@ -33,6 +33,7 @@ public class Ship extends JPanel implements KeyListener
 	int Beam_x, Beam_y;
 	int stop;
 	double time=0;
+
 	
 	Timer timer;
 	
@@ -88,7 +89,7 @@ public class Ship extends JPanel implements KeyListener
 				break;
 			case 68:
 				if(Ship_x<=500-86)
-				Ship_x+=8;
+					Ship_x+=8;
 				repaint();
 				break;
 			case 32:
@@ -101,10 +102,6 @@ public class Ship extends JPanel implements KeyListener
 	public class Beam extends JPanel implements ActionListener
 
 	{
-		
-		
-		
-		
 		public Beam() 
 		{
 			timer= new Timer(1,this);
