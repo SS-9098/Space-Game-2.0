@@ -39,7 +39,7 @@ public class Ship extends JPanel implements KeyListener
 	
 	public void Initialize()
 	{
-		ship = new ImageIcon("spaceship.png").getImage();
+		ship = new ImageIcon("src/Resources/spaceship.png").getImage();
 		frame=new Frame();
 		frame.addKeyListener(this);
 		
@@ -165,7 +165,7 @@ public class Ship extends JPanel implements KeyListener
 			
 			for(int i=0 ; i<EnemyNo ; i++)
 			{
-				enemy[i] = new ImageIcon("enemy.png").getImage();
+				enemy[i] = new ImageIcon("src/Resources/enemy.png").getImage();
 				x[i] = 50;
 				y[i] = 50;
 				xVelo[i]=1;
