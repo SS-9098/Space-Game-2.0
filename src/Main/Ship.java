@@ -18,7 +18,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-@SuppressWarnings("serial")
+
 public class Ship extends JPanel implements KeyListener
 {
 	JFrame frame;
@@ -154,7 +154,6 @@ public class Ship extends JPanel implements KeyListener
 		int panel_width = 500, panel_height = 400;
 		
 		Timer move,  direction;
-		Ship obj = new Ship();
 		
 		public Enemy() 
 		{
@@ -206,13 +205,13 @@ public class Ship extends JPanel implements KeyListener
 				}
 			
 					if(x[i]>=panel_width-50)
-						xVelo[i]=(int) (Math.random()*(0-7));
+						xVelo[i]=(int) (Math.random()*(7));
 					if(x[i]<0)
-						xVelo[i]=(int) (Math.random()*(7-0)+0);
+						xVelo[i]=(int) (Math.random()*(7)+0);
 					if(y[i]>=panel_height-50)
-						yVelo[i]=(int) (Math.random()*(0-5)+0);
+						yVelo[i]=(int) (Math.random()*(-5)+0);
 					if(y[i]<0)
-						yVelo[i]=(int) (Math.random()*(5-0)+0);
+						yVelo[i]=(int) (Math.random()*(5)+0);
 					x[i]+=xVelo[i];
 					y[i]+=yVelo[i];
 					repaint();
