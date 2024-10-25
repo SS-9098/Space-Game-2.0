@@ -3,7 +3,7 @@
 
 _OR_
 
-**Run** ```Space_Game_2.0.JAR``` **file(No IDE Needed)**
+**Run** ```Space_Game_2.0.JAR``` **file (No IDE Needed)**
 
 ## Instructions
 - ```a``` and ```d``` to move
@@ -11,4 +11,4 @@ _OR_
 - Clear out the aliens as fast as you can!
   
 > [!IMPORTANT]
-> Make sure your machine has JRE version 8 or later installed!
+> Make sure your machine has Java version 8 or later installed!
